@@ -56,12 +56,8 @@ import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFun
               title="Second Title"
               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur fugit, inventore odio quia quibusdam quis ratione rem."
           />
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta, in labore minima molestiae optio porro quae quidem quo sequi!</p>
+          <p className="text-red-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta, in labore minima molestiae optio porro quae quidem quo sequi!</p>
       </Layout>
-
-
-
-
     </>
   )
 }

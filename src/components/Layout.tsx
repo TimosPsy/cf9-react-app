@@ -2,7 +2,7 @@ import Header from "./Header.tsx";
 import Footer from "./Footer.tsx";
 
 interface LayoutProps {
-    children: React.ReactNode
+    children: React.ReactNode;
     addClasses?: string;
 }
 

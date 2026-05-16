@@ -35,7 +35,8 @@
  import Layout from "./components/Layout.tsx";
  // import Counter from "./components/LessonFour/Counter.tsx";
  // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
- import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+ //import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+ import NameChanger from "./components/LessonFive/NameChanger.tsx";
 
  function App() {
 
@@ -63,7 +64,8 @@
           {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perferendis?</p>*/}
           {/*<Counter/>*/}
           {/*<ClassCounter/>*/}
-          <CounterAdvanced/>
+          {/*<CounterAdvanced/>*/}
+          <NameChanger/>
       </Layout>
     </>
   )

@@ -22,8 +22,8 @@ const Counter = () => {
 
     return (
         <>
-            <h1 className="text-center text-xl fond-bold"
-            >Count is {counter}</h1>
+           <h1 className="text-center text-xl font-bold"
+           >Count is {counter}</h1>
            <div className="text-center pt-10 space-x-4">
                <CounterButton
                    addClasses="bg-green-500"

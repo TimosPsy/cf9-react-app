@@ -34,6 +34,7 @@
 //import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
  import Layout from "./components/Layout.tsx";
  import Counter from "./components/LessonFour/Counter.tsx";
+ import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
 
  function App() {
 
@@ -60,6 +61,7 @@
           {/*<p className="text-red-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta, in labore minima molestiae optio porro quae quidem quo sequi!</p>*/}
           {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perferendis?</p>*/}
           <Counter/>
+          <ClassCounter/>
       </Layout>
     </>
   )

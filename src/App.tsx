@@ -33,6 +33,7 @@
 
 //import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
  import Layout from "./components/Layout.tsx";
+ import Counter from "./components/LessonFour/Counter.tsx";
 
  function App() {
 
@@ -51,13 +52,14 @@
       {/*<ArrowFunctionalComponentWithProps title="Heading 1"/>*/}
 
 
-      <Layout addClasses="text-blue-700 bg-gray-100" >
+      <Layout addClasses="bg-gray-50" >
           {/*<ArrowFunctionalComponentWithProps*/}
           {/*    title="Second Title"*/}
           {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur fugit, inventore odio quia quibusdam quis ratione rem."*/}
           {/*/>*/}
-          <p className="text-red-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta, in labore minima molestiae optio porro quae quidem quo sequi!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perferendis?</p>
+          {/*<p className="text-red-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta, in labore minima molestiae optio porro quae quidem quo sequi!</p>*/}
+          {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perferendis?</p>*/}
+          <Counter/>
       </Layout>
     </>
   )

@@ -1,15 +1,9 @@
 import {useState} from "react";
 import CounterButton from "./CounterButton.tsx";
-
-
-type CounterState = {
-    counter: number;
-    lastAction: string;
-    time: string;
-}
+import type {CounterState} from "../../types.ts";
 
 const initialState = {
-    counter: 0,
+    count: 0,
     lastAction: "",
     time: "",
 }
@@ -22,7 +16,7 @@ const CounterAdvanced = () => {
 
     const increaseCount = () => {
         setState({
-            counter: state.counter + 1,
+            count: state.count + 1,
             lastAction: "Increase",
             time: getCurrentTime(),
         })
@@ -30,7 +24,7 @@ const CounterAdvanced = () => {
 
     const decreaseCount = () => {
         setState({
-            counter: state.counter - 1,
+            count: state.count - 1,
             lastAction: "Decrease",
             time: getCurrentTime(),
         })
@@ -38,7 +32,7 @@ const CounterAdvanced = () => {
 
     const resetCount = () => {
         setState({
-            counter: 0,
+            count: 0,
             lastAction: "Reset",
             time: getCurrentTime(),
         })
@@ -48,7 +42,7 @@ const CounterAdvanced = () => {
     return (
         <>
             <h1 className="text-center text-xl font-bold"
-            >Count is {state.counter}</h1>
+            >Count is {state.count}</h1>
             <div className="text-center pt-10 space-x-4">
                 <CounterButton
                     addClasses="bg-green-500"
@@ -59,13 +53,13 @@ const CounterAdvanced = () => {
                     addClasses="bg-red-400"
                     onClick={decreaseCount}
                     label="Decrease"
-                    disabled = {state.counter === 0}
+                    disabled = {state.count === 0}
                 />
                 <CounterButton
                     addClasses ="bg-cf-dark-red"
                     onClick={resetCount}
                     label="Reset"
-                    disabled={state.counter === 0}
+                    disabled={state.count === 0}
                 />
             </div>
 

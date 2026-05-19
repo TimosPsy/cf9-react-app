@@ -37,11 +37,15 @@
  // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
  //import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
  //import NameChanger from "./components/LessonFive/NameChanger.tsx";
- import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+// import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+ import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
+
+
+
 
  function App() {
 
-  return (
+     return (
     <>
       {/*{LESSON THREE}*/}
       {/*<FunctionalComponent />*/}
@@ -67,7 +71,8 @@
           {/*<ClassCounter/>*/}
           {/*<CounterAdvanced/>*/}
           {/*<NameChanger/>*/}
-          <CounterWithCustomHook/>
+          {/*<CounterWithCustomHook/>*/}
+          <NameChangerWithTitle/>
       </Layout>
     </>
   )

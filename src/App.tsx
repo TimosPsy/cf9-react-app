@@ -37,9 +37,10 @@
  // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
  //import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
  //import NameChanger from "./components/LessonFive/NameChanger.tsx";
-// import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
+ //import CounterWithCustomHook from "./components/LessonFive/CounterWithCustomHook.tsx";
  //import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
- import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
+ //import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
+ import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
 
 
 
@@ -74,7 +75,8 @@
           {/*<NameChanger/>*/}
           {/*<CounterWithCustomHook/>*/}
           {/*<NameChangerWithTitle/>*/}
-          <AutoRedirect/>
+          {/*<AutoRedirect/>*/}
+          <AutoRedirectAdvanced/>
       </Layout>
     </>
   )

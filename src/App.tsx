@@ -41,7 +41,8 @@
  //import NameChangerWithTitle from "./components/LessonFive/NameChangerWithTitle.tsx";
  //import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
  //import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
- import WindowSize from "./components/LessonSix/WindowSize.tsx";
+ //import WindowSize from "./components/LessonSix/WindowSize.tsx";
+ import FocusInput from "./components/LessonSix/FocusInput.tsx";
 
 
 
@@ -78,7 +79,8 @@
           {/*<NameChangerWithTitle/>*/}
           {/*<AutoRedirect/>*/}
           {/*<AutoRedirectAdvanced/>*/}
-          <WindowSize/>
+          {/*<WindowSize/>*/}
+          <FocusInput/>
       </Layout>
     </>
   )

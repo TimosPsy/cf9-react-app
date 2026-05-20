@@ -42,7 +42,8 @@
  //import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
  //import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
  //import WindowSize from "./components/LessonSix/WindowSize.tsx";
- import FocusInput from "./components/LessonSix/FocusInput.tsx";
+ //import FocusInput from "./components/LessonSix/FocusInput.tsx";
+ import PreviousValue from "./components/PreviousValue.tsx";
 
 
 
@@ -80,7 +81,8 @@
           {/*<AutoRedirect/>*/}
           {/*<AutoRedirectAdvanced/>*/}
           {/*<WindowSize/>*/}
-          <FocusInput/>
+          {/*<FocusInput/>*/}
+          <PreviousValue/>
       </Layout>
     </>
   )

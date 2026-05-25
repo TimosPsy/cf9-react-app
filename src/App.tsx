@@ -32,7 +32,7 @@
 
 
 //import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
- import Layout from "./components/Layout.tsx";
+// import Layout from "./components/Layout.tsx";
  // import Counter from "./components/LessonFour/Counter.tsx";
  // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
  //import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
@@ -43,12 +43,24 @@
  //import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
  //import WindowSize from "./components/LessonSix/WindowSize.tsx";
  //import FocusInput from "./components/LessonSix/FocusInput.tsx";
- import PreviousValue from "./components/PreviousValue.tsx";
+ //import PreviousValue from "./components/PreviousValue.tsx";
 
 
 
+
+
+ import {Route, Routes} from "react-router";
+ import NameChanger from "./components/LessonFive/NameChanger.tsx";
+ import HomePage from "./pages/HomePage.tsx";
+ import Counter from "./components/LessonFour/Counter.tsx";
+ import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+ import RouterLayout from "./components/RouterLayout.tsx";
 
  function App() {
+
+     // useEffect(() => {
+     //     history.pushState({}, "","/about");
+     // },[]);
 
      return (
     <>
@@ -65,25 +77,35 @@
       {/*<ArrowFunctionalComponentWithProps title="Heading 1"/>*/}
 
 
-      <Layout addClasses="bg-gray-50" >
-          {/*<ArrowFunctionalComponentWithProps*/}
-          {/*    title="Second Title"*/}
-          {/*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur fugit, inventore odio quia quibusdam quis ratione rem."*/}
-          {/*/>*/}
-          {/*<p className="text-red-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta, in labore minima molestiae optio porro quae quidem quo sequi!</p>*/}
-          {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perferendis?</p>*/}
-          {/*<Counter/>*/}
-          {/*<ClassCounter/>*/}
-          {/*<CounterAdvanced/>*/}
-          {/*<NameChanger/>*/}
-          {/*<CounterWithCustomHook/>*/}
-          {/*<NameChangerWithTitle/>*/}
-          {/*<AutoRedirect/>*/}
-          {/*<AutoRedirectAdvanced/>*/}
-          {/*<WindowSize/>*/}
-          {/*<FocusInput/>*/}
-          <PreviousValue/>
-      </Layout>
+      {/*<Layout addClasses="bg-gray-50" >*/}
+      {/*    /!*<ArrowFunctionalComponentWithProps*!/*/}
+      {/*    /!*    title="Second Title"*!/*/}
+      {/*    /!*    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur fugit, inventore odio quia quibusdam quis ratione rem."*!/*/}
+      {/*    /!*<p className="text-red-200">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dicta, in labore minima molestiae optio porro quae quidem quo sequi!</p>*!/*/}
+      {/*    /!*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, perferendis?</p>*!/*/}
+      {/*    /!*<Counter/>*!/*/}
+      {/*    /!*<ClassCounter/>*!/*/}
+      {/*    /!*<CounterAdvanced/>*!/*/}
+      {/*    <NameChanger/>*/}
+      {/*    /!*<CounterWithCustomHook/>*!/*/}
+      {/*    /!*<NameChangerWithTitle/>*!/*/}
+      {/*    /!*<AutoRedirect/>*!/*/}
+      {/*    /!*<AutoRedirectAdvanced/>*!/*/}
+      {/*    /!*<WindowSize/>*!/*/}
+      {/*    /!*<FocusInput/>*!/*/}
+      {/*    <PreviousValue/>*/}
+      {/*</Layout>*/}
+
+        <Routes>
+            <Route element={<RouterLayout />}>
+              <Route index element={<HomePage />} />
+              <Route path="examples?">
+                <Route path="name-changer" element={<NameChanger />}/>
+                <Route path="counter" element={<Counter />}/>
+                <Route path="counter-advanced" element={<CounterAdvanced />}/>
+              </Route>
+            </Route>
+        </Routes>
     </>
   )
 }

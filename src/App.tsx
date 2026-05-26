@@ -57,6 +57,7 @@
  import RouterLayout from "./components/RouterLayout.tsx";
  import UserPage from "./pages/UserPage.tsx";
  import SearchPage from "./pages/SearchPage.tsx";
+ import MultyFieldForm from "./components/LessonNine/MultyFieldForm.tsx";
 
  function App() {
 
@@ -113,7 +114,10 @@
               </Route>
               <Route path="search" element={<SearchPage />}/>
                 {/*/search?query=react-js&page=2   QUERY Params*/}
+
+              <Route path="multyfield-form" element={<MultyFieldForm />}/>
             </Route>
+
         </Routes>
     </>
   )

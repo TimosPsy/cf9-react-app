@@ -50,11 +50,13 @@
 
 
  import {Route, Routes} from "react-router";
- import NameChanger from "./components/LessonFive/NameChanger.tsx";
+ //import NameChanger from "./components/LessonFive/NameChanger.tsx";
  import HomePage from "./pages/HomePage.tsx";
- import Counter from "./components/LessonFour/Counter.tsx";
- import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+ //import Counter from "./components/LessonFour/Counter.tsx";
+ //import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
  import RouterLayout from "./components/RouterLayout.tsx";
+ import UserPage from "./pages/UserPage.tsx";
+ import SearchPage from "./pages/SearchPage.tsx";
 
  function App() {
 
@@ -97,13 +99,20 @@
       {/*</Layout>*/}
 
         <Routes>
+
             <Route element={<RouterLayout />}>
               <Route index element={<HomePage />} />
-              <Route path="examples?">
-                <Route path="name-changer" element={<NameChanger />}/>
-                <Route path="counter" element={<Counter />}/>
-                <Route path="counter-advanced" element={<CounterAdvanced />}/>
+              {/*<Route path="examples?">*/}
+              {/*  <Route path="name-changer" element={<NameChanger />}/>*/}
+              {/*  <Route path="counter" element={<Counter />}/>*/}
+              {/*  <Route path="counter-advanced" element={<CounterAdvanced />}/>*/}
+              {/*</Route>*/}
+
+              <Route path="users">
+                <Route path=":userId" element={<UserPage />} />
               </Route>
+              <Route path="search" element={<SearchPage />}/>
+                {/*/search?query=react-js&page=2   QUERY Params*/}
             </Route>
         </Routes>
     </>

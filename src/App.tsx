@@ -59,6 +59,7 @@
  import SearchPage from "./pages/SearchPage.tsx";
  import MultyFieldForm from "./components/LessonNine/MultyFieldForm.tsx";
  import MultiFieldFormWithValidation from "./components/LessonNine/MultiFieldFormWithValidation.tsx";
+ import MultiFieldFormWithValidationWithZod from "./components/LessonTen/MultiFieldFormWithValidationWithZod.tsx";
 
  function App() {
 
@@ -119,6 +120,7 @@
               <Route path="multyfield-form" element={<MultyFieldForm />}/>
                 <Route path="multyfield-form" element={<MultyFieldForm />}/>
                 <Route path="multifield-form-validation" element={<MultiFieldFormWithValidation />}/>
+                <Route path="multifield-form-zod" element={<MultiFieldFormWithValidationWithZod />}/>
 
             </Route>
 

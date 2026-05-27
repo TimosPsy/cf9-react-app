@@ -43,6 +43,7 @@ const MultiFieldFormWithValidationWithZod = () => {
     const validateForm = (): boolean => {
         const result = formSchema.safeParse(values);
 
+        console.log(result);
         if (!result.success) {
             const newErrors: FormErrors = {};
             console.log(result.error.issues);
@@ -75,9 +76,8 @@ const MultiFieldFormWithValidationWithZod = () => {
 
       const isValid = validateForm();
       if (isValid) {
-          setValues(values);
-          setErrors({});
-          setSubmittedData(null);
+          setSubmittedData(values);
+          setValues(initialValues);
       }
     }
 

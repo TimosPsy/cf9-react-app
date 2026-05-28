@@ -60,6 +60,8 @@
  import MultyFieldForm from "./components/LessonNine/MultyFieldForm.tsx";
  import MultiFieldFormWithValidation from "./components/LessonNine/MultiFieldFormWithValidation.tsx";
  import MultiFieldFormWithValidationWithZod from "./components/LessonTen/MultiFieldFormWithValidationWithZod.tsx";
+ import MultiFieldFormWithValidationWithHookForm
+     from "./components/LessonTen/MultiFieldFormWithValidationWithHookForm.tsx";
 
  function App() {
 
@@ -121,6 +123,7 @@
                 <Route path="multyfield-form" element={<MultyFieldForm />}/>
                 <Route path="multifield-form-validation" element={<MultiFieldFormWithValidation />}/>
                 <Route path="multifield-form-zod" element={<MultiFieldFormWithValidationWithZod />}/>
+                <Route path="multifield-hook-form" element={<MultiFieldFormWithValidationWithHookForm />}/>
 
             </Route>
 

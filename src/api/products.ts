@@ -18,6 +18,7 @@ export async function getProduct(id: number): Promise<Product> {
     return await res.json()
 }
 
+
 export async function updateProduct(
     id: number,
     data: Product) {

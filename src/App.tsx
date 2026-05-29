@@ -126,7 +126,7 @@
                 <Route path="multifield-form-zod" element={<MultiFieldFormWithValidationWithZod />}/>
                 <Route path="multifield-hook-form" element={<MultiFieldFormWithValidationWithHookForm />}/>
 
-                <Route>
+                <Route path="products">
                     <Route index element={<ProductsListPage />} />
                     {/*<Route path=":productId" element={<ProductPage />} />*/}
 

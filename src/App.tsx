@@ -63,6 +63,10 @@
  import MultiFieldFormWithValidationWithHookForm
      from "./components/LessonTen/MultiFieldFormWithValidationWithHookForm.tsx";
  import ProductsListPage from "./pages/ProductsListPage.tsx";
+ import ProductPage from "@/pages/ProductPage.tsx";
+ import LoginPage from "@/pages/LoginPage.tsx";
+ import ProtectedRoute from "@/components/ProtectedRoute.tsx";
+
 
  function App() {
 
@@ -126,11 +130,12 @@
                 <Route path="multifield-form-zod" element={<MultiFieldFormWithValidationWithZod />}/>
                 <Route path="multifield-hook-form" element={<MultiFieldFormWithValidationWithHookForm />}/>
 
-                <Route path="products">
+                <Route path="products" element={<ProtectedRoute/>}>
                     <Route index element={<ProductsListPage />} />
-                    {/*<Route path=":productId" element={<ProductPage />} />*/}
-
+                    <Route path=":productId" element={<ProductPage />} />
                 </Route>
+
+                <Route path="Login" element={<LoginPage/>}/>
 
             </Route>
 

@@ -51,6 +51,7 @@ export const AuthProvider = ({children}: {children: React.ReactNode}) => {
         setAccessToken(res.access_token);
         setTenantId(readTenantFromToken(res.access_token));
     }
+
     const logoutUser = () => {
         deleteCookie("access_token");
         setAccessToken(null);

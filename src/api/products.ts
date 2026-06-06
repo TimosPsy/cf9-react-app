@@ -21,7 +21,7 @@ export async function getProduct(id: number): Promise<Product> {
 
 export async function updateProduct(
     id: number,
-    data: Product) {
+    data: ProductFormData) {
     const res = await fetch(`${API_URL}/tenants/${TENANT_ID}/products/${id}`, {
         method: "PUT",
         headers: {"Content-Type":"application/json"},
